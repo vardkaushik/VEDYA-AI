@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedya AI Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <header>
+        <h1>🌸 Vedya AI 🌸</h1>
+        <p>Your Personalized Ayurveda Health Report</p>
+    </header>
+    <div class="container">
+        <div class="report-box">
+            <h2 id="reportTitle"></h2>
+        </div>
+        <div id="doshaSection" class="report-box">
+            <h3>🪷 Dominant Dosha</h3>
+            <p id="dosha" class="highlighted-text"></p>
+            <img id="nerveImage" alt="Nerve Signal Image">
+        </div>
+        <div id="heartRateSection" class="report-box">
+            <h3>💓 Live Heart Rate</h3>
+            <canvas id="heartRateChart"></canvas>
+        </div>
+        <div id="bmiSection" class="report-box">
+            <h3>📏 Body Mass Index (BMI)</h3>
+            <canvas id="bmiChart"></canvas>
+        </div>
+        <div id="diseaseSection" class="report-box">
+            <h3>⚕️ Diseases You Are Prone To</h3>
+            <ul id="diseases"></ul>
+        </div>
+        <div id="adviceSection" class="report-box">
+            <h3>🌼 Ayurveda Advice</h3>
+            <ul id="adviceList"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2024 Vedya AI. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
